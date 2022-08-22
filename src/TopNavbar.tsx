@@ -58,6 +58,12 @@ export default function TopNavbar() {
       <Box bg={useColorModeValue("gray.900", "gray.900")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
+            bg={"none"}
+            color={"gray.50"}
+            _hover={{
+              textColor: useColorModeValue("gray.900", "gray.900"),
+              bg: useColorModeValue("gray.50", "gray.50"),
+            }}
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
